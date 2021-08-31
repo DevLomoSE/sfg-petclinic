@@ -49,8 +49,9 @@
     </build>
 
     <scm>
-        <connection>scm:git:git@github.com:DevLomoSE/sfg-petclinic.git</connection>
+        <connection>scm:git:https://github.com/DevLomoSE/sfg-petclinic.git</connection>
         <developerConnection>scm:git:git@github.com:DevLomoSE/sfg-petclinic.git</developerConnection>
+        <url>https://github.com/DevLomoSE/sfg-petclinic</url>
       <tag>sfg-petclinic-0.0.1</tag>
   </scm>
 
