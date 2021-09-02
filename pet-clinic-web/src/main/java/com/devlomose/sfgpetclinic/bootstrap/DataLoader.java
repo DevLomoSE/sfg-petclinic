@@ -7,10 +7,14 @@ import com.devlomose.sfgpetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.Random;
 import java.util.UUID;
 
 @Component
 public class DataLoader implements CommandLineRunner {
+
+    private final int min = 1;
+    private final int max = 100;
 
     private final OwnerService ownerService;
     private final VetService vetService;
@@ -25,15 +29,17 @@ public class DataLoader implements CommandLineRunner {
 
         System.out.println("bootstrap init");
 
+        Random random = new Random();
+
         Owner owner1 = new Owner();
-        owner1.setId(UUID.randomUUID().getMostSignificantBits());
+        owner1.setId(Integer.toUnsignedLong(random.nextInt(max - min) + min));
         owner1.setFirstName("Jonathan");
         owner1.setLastName("Guzman");
 
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
-        owner2.setId(UUID.randomUUID().getMostSignificantBits());
+        owner2.setId(Integer.toUnsignedLong(random.nextInt(max - min) + min));
         owner2.setFirstName("Jonathan");
         owner2.setLastName("Guzman");
 
@@ -42,14 +48,14 @@ public class DataLoader implements CommandLineRunner {
         System.out.println("Owners loaded...");
 
         Vet vet1 = new Vet();
-        vet1.setId(UUID.randomUUID().getMostSignificantBits());
+        vet1.setId(Integer.toUnsignedLong(random.nextInt(max - min) + min));
         vet1.setFirstName("Andres");
         vet1.setLastName("Hernandez");
 
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setId(UUID.randomUUID().getMostSignificantBits());
+        vet2.setId(Integer.toUnsignedLong(random.nextInt(max - min) + min));
         vet2.setFirstName("Frida");
         vet2.setLastName("Hernandez");
 
