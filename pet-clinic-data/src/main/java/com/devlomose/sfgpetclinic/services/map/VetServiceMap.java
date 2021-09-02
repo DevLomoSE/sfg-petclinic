@@ -1,11 +1,11 @@
 package com.devlomose.sfgpetclinic.services.map;
 
 import com.devlomose.sfgpetclinic.model.Vet;
-import com.devlomose.sfgpetclinic.services.CRUDService;
+import com.devlomose.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CRUDService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
