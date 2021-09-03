@@ -32,14 +32,12 @@ public class DataLoader implements CommandLineRunner {
         Random random = new Random();
 
         Owner owner1 = new Owner();
-        owner1.setId(Integer.toUnsignedLong(random.nextInt(max - min) + min));
         owner1.setFirstName("Jonathan");
         owner1.setLastName("Guzman");
 
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
-        owner2.setId(Integer.toUnsignedLong(random.nextInt(max - min) + min));
         owner2.setFirstName("Jonathan");
         owner2.setLastName("Guzman");
 
@@ -48,14 +46,12 @@ public class DataLoader implements CommandLineRunner {
         System.out.println("Owners loaded...");
 
         Vet vet1 = new Vet();
-        vet1.setId(Integer.toUnsignedLong(random.nextInt(max - min) + min));
         vet1.setFirstName("Andres");
         vet1.setLastName("Hernandez");
 
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setId(Integer.toUnsignedLong(random.nextInt(max - min) + min));
         vet2.setFirstName("Frida");
         vet2.setLastName("Hernandez");
 
