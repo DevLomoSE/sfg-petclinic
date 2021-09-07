@@ -1,7 +1,7 @@
 package com.devlomose.sfgpetclinic.services.map;
 
 import com.devlomose.sfgpetclinic.model.Speciality;
-import com.devlomose.sfgpetclinic.services.SpecialitiesService;
+import com.devlomose.sfgpetclinic.services.SpecialtyService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -11,7 +11,7 @@ import java.util.Set;
  * Created by @DevLomoSE at 7/9/21 11:48.
  */
 @Service
-public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialitiesService {
+public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialtyService {
     @Override
     public Set<Speciality> findAll() {
         return super.findAll();
