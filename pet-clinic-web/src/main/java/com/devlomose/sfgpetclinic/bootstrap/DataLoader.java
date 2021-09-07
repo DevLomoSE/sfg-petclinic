@@ -1,6 +1,7 @@
 package com.devlomose.sfgpetclinic.bootstrap;
 
 import com.devlomose.sfgpetclinic.model.Owner;
+import com.devlomose.sfgpetclinic.model.PetType;
 import com.devlomose.sfgpetclinic.model.Vet;
 import com.devlomose.sfgpetclinic.services.OwnerService;
 import com.devlomose.sfgpetclinic.services.VetService;
@@ -28,8 +29,6 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         System.out.println("bootstrap init");
-
-        Random random = new Random();
 
         Owner owner1 = new Owner();
         owner1.setFirstName("Jonathan");
