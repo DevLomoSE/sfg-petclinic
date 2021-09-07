@@ -11,4 +11,9 @@ public class IndexController {
         System.out.println("layout");
         return "index";
     }
+
+    @GetMapping("/oups")
+    public String errorPage(){
+        return "notimplemented";
+    }
 }
